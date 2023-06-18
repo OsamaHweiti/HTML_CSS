@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse; 
+    border: 1px dotted black;
+}
+
+th,td{
+    padding: 15px;
+    border: 1px dotted black;
+}
+
+.eeed {
+
+   text-align: center;
+}
+
+.all{
+    padding: 20px;
+    width: 400px;
+    margin: 10px auto;
+    border: 2px solid #cbc9c9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
