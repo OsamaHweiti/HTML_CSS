@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        select,
+        input[type="radio"] {
+             margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body >
-    <form>
-       <label>Name: </label> <input type="text">
-       <br>
-       <label>Address:</label> <input type="text">
-       <br>
-       <label>City:</label> <input type="text">
-       <br>
-       <label>State:</label> <input type="text">
-       <br>
-       <label>Zip:</label> <input type="text">
-       <br>
-       Magazine: <select>
-        <option value="Newsweek">Newsweek</option>
-       </select>
-       <br>
-       <label>Subscription</label><input type="radio"><label>1 year</label>
-       <input type="radio"><labal>2 years</labal>
-       <br>
-       <button>Send Your Order</button>
+<body>
+    <form action="">
+        <table>
+            <tbody><tr>
+                <td>Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text"></td>
+            </tr>            
+            <tr>
+                <td>City:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td ><input type="text" class="short"></td>
+            </tr>
+            <tr>
+                <td>Zip: </td>
+                <td ><input type="text" class="short"></td>
+            </tr>
+            <tr>
+                <td>Magazine:</td>
+                <td >
+                    <select name="">
+                        <option value="Newsweek">Newsweek</option>
+                        <option value="thing">another thing</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Subscription:</td>
+                <td>
+                    <input type="radio" name="hi">
+                    <label for="">1 year</label>
+                    <input type="radio" name="hi">
+                    <label for="">2 year</label>
+                </td>
+            </tr>
+        </tbody></table>
+        <button>Send Your Order</button>
     </form>
+
+
 </body>
 </html>
